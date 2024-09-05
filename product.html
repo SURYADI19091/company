@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <a href="#" class="navbar-brand">
+        <img src="resource/img/logo.png" alt="Logo" class="logo">
+    </a>
+    <div class="navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link" data-translate="home">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-translate="facilities">Facilities</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" data-translate="about">About</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="product">Product</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item" data-translate="automotive">Automotive</a>
+                    <a href="#" class="dropdown-item" data-translate="non_automotive">Non-Automotive</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="language">Language</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item" data-lang="id">
+                        <img src="resource/img/id.jpg" alt="Indonesia Flag" class="flag-icon"> Indonesian
+                    </a>
+                    <a href="#" class="dropdown-item" data-lang="jp">
+                        <img src="resource/img/jp.png" alt="Japan Flag" class="flag-icon"> Japanese
+                    </a>
+                    <a href="#" class="dropdown-item" data-lang="uk">
+                        <img src="resource/img/uk.png" alt="UK Flag" class="flag-icon"> English
+                    </a>              
+                </div>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link" data-translate="contact">Contact</a></li>
+        </ul>
+        <!-- Hamburger Icon -->
+        <span onclick="toggleNavbar()" class="navbar-toggle" id="navbarToggle">&#9776;</span>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <span onclick="closeSidebar()" class="close-btn">&times;</span>
+        <ul class="sidebar-nav">
+            <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="home">Home</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="facilities">Facilities</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="about">About</a></li>
+            <li class="sidebar-item dropdown">
+                <a href="#" class="sidebar-link dropdown-toggle" data-toggle="dropdown" data-translate="product">Product</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item" data-translate="automotive">Automotive</a>
+                    <a href="#" class="dropdown-item" data-translate="non_automotive">Non-Automotive</a>
+                </div>
+            </li>
+            <li class="sidebar-item dropdown">
+                <a href="#" class="sidebar-link dropdown-toggle" data-toggle="dropdown" data-translate="language">Language</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item" data-lang="id">
+                        <img src="resource/img/id.jpg" alt="Indonesia Flag" class="flag-icon"> Indonesian
+                    </a>
+                    <a href="#" class="dropdown-item" data-lang="jp">
+                        <img src="resource/img/jp.png" alt="Japan Flag" class="flag-icon"> Japanese
+                    </a>
+                    <a href="#" class="dropdown-item" data-lang="uk">
+                        <img src="resource/img/uk.png" alt="UK Flag" class="flag-icon"> English
+                    </a>              
+                </div>
+            </li>
+            <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Content -->
+<!-- PRODUCT GALLERY SECTION -->
+<section class="portfolio">
+    <h2 class="portfolio-title" data-translate="product">PRODUCT GALLERY</h2>
+    
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all" data-translate="all">All</button>
+        <button class="filter-btn" data-filter="clothing" data-translate="clothing">Clothing</button>
+        <button class="filter-btn" data-filter="accessories" data-translate="accessories">Accessories</button>
+        <button class="filter-btn" data-filter="shoes" data-translate="shoes">Shoes</button>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item" data-category="clothing">
+            <img src="resource/img/clothing1.jpg" alt="Clothing 1" loading="lazy">
+            <div class="gallery-item-info">
+                <h3>Casual Shirt</h3>
+                <p>Price: $29.99</p>
+                <button class="detail-btn" data-product="clothing1">Detail</button>
+            </div>
+        </div>
+
+        <!-- Add more gallery items as needed -->
+    </div>
+</section>
+
+<!-- Modal Product -->
+<div id="modal-product" class="modal-product">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-body">
+            <img id="modal-img" src="" alt="" class="modal-img">
+            <div id="modal-details" class="modal-details">
+                <h3 id="modal-title"></h3>
+                <p id="modal-price"></p>
+                <p id="modal-material"></p>
+                <p id="modal-sizes"></p>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="resource/img/logo.png" alt="Company Logo">
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="about_us">About Us</h4>
+                <p data-translate="about_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="quick_links">Quick Links</h4>
+                <ul>
+                    <li><a href="#" data-translate="home">Home</a></li>
+                    <li><a href="#" data-translate="facilities">Facilities</a></li>
+                    <li><a href="#" data-translate="about">About</a></li>
+                    <li><a href="#" data-translate="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="contact_us">Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a href="tel:+123456789">+123 456 789</a></li>
+                    <li data-translate="address">123 Street, City, Country</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="copyright">&copy; 2024 Suryadi (Project). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<!-- Script -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js"></script>
+<script src="sidebar.js"></script>
+<script src="translations.js"></script>
+<script src="detail_product.js"></script>
+<script src="data-filter.js"></script>
+
+</body>
+</html>
