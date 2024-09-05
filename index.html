@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">
+            <img src="resource/img/logo.png" alt="Logo" class="logo">
+        </a>
+
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link" data-translate="home">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-translate="facilities">Facilities</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-translate="about">About</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="product">Product</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-translate="automotive">Automotive</a>
+                        <a href="#" class="dropdown-item" data-translate="non_automotive">Non-Automotive</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="language">Language</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-lang="id">
+                            <img src="resource/img/id.jpg" alt="Indonesia Flag" class="flag-icon"> Indonesian
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="jp">
+                            <img src="resource/img/jp.png" alt="Japan Flag" class="flag-icon"> Japanese
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="uk">
+                            <img src="resource/img/uk.png" alt="UK Flag" class="flag-icon"> English
+                        </a>              
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link" data-translate="contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <span onclick="toggleNavbar()" class="navbar-toggle" id="navbarToggle">&#9776;</span>
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <span onclick="closeSidebar()" class="close-btn">&times;</span>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="home">Home</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="facilities">Facilities</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="about">About</a></li>
+                <li class="sidebar-item dropdown">
+                    <a href="#" class="sidebar-link dropdown-toggle" data-toggle="dropdown" data-translate="product">Product</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-translate="automotive">Automotive</a>
+                        <a href="#" class="dropdown-item" data-translate="non_automotive">Non-Automotive</a>
+                    </div>
+                </li>
+                <li class="sidebar-item dropdown">
+                    <a href="#" class="sidebar-link dropdown-toggle" data-toggle="dropdown" data-translate="language">Language</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-lang="id">
+                            <img src="resource/img/id.jpg" alt="Indonesia Flag" class="flag-icon"> Indonesian
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="jp">
+                            <img src="resource/img/jp.png" alt="Japan Flag" class="flag-icon"> Japanese
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="uk">
+                            <img src="resource/img/uk.png" alt="UK Flag" class="flag-icon"> English
+                        </a>              
+                    </div>
+                </li>
+                <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+ <!-- Hero Section with Image Slider -->
+    <section class="hero">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="resource/img/hero.jpg" alt="Hero Image 1">
+                </div>
+                <div class="slide">
+                    <img src="resource/img/hero2.png" alt="Hero Image 2">
+                </div>
+                <div class="slide">
+                    <img src="" alt="Hero Image 3">
+                </div>
+            </div>
+        </div>
+        <div class="hero-text">
+            <h1 data-translate="welcome">Welcome to Our Website</h1>
+            <p data-translate="journey">Your journey begins here</p>
+            <a href="#" class="btn" data-translate="get_started">Get Started</a>
+        </div>
+
+        <!-- Navigation dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+<!-- Facility CARD -->
+    <section class="facility-section">
+        <h2 class="section-title" data-translate="facilities_title">Our Facilities</h2>
+        <p class="section-description" data-translate="facilities_description">Check out the best facilities from PT</p>
+
+        <div class="card">
+            <img src="resource/img/facilty.jpeg" alt="Facility Image" loading="lazy">
+            <h3 data-translate="high_tech_machinery">High-Tech Machinery</h3>
+            <p data-translate="high_tech_description">Facilities with advanced machinery for blow molding production with high efficiency and maximum precision.</p>
+            <button class="card-btn" data-translate="explore_more">Explore More</button>
+        </div>
+        <div class="card">
+            <img src="resource/img/waregouse.jpeg" alt="Facility Image" loading="lazy">
+            <h3 data-translate="warehouse_storage">Warehouse Storage</h3>
+            <p data-translate="warehouse_description">Spacious and organized warehouse storage to ensure product quality is maintained.</p>
+            <button class="card-btn" data-translate="explore_more">Explore More</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Facility Image" loading="lazy">
+            <h3 data-translate="laboratory_testing">Laboratory Testing</h3>
+            <p data-translate="laboratory_description">Laboratory testing with the latest technology to ensure product quality meets standards.</p>
+            <button class="card-btn" data-translate="explore_more">Explore More</button>
+        </div>
+    </section>
+
+<!-- NEWS CARD  -->
+    <section class="news-section">
+        <h2 class="section-title" data-translate="latest_news">Latest News</h2>
+        <p class="section-description" data-translate="news_description">Get the latest updates from PT</p>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="News Image" loading="lazy">
+            <h3 data-translate="news_title_1">News Title 1</h3>
+            <p data-translate="news_description_1">This is a brief description for the first news item. Get the latest information on innovations and developments in the blow molding industry.</p>
+            <a href="#" class="card-btn" data-translate="read_more">Read More</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="News Image" loading="lazy">
+            <h3 data-translate="news_title_2">News Title 2</h3>
+            <p data-translate="news_description_2">News about a new collaboration between PT and a leading company in the industry.</p>
+            <a href="#" class="card-btn" data-translate="read_more">Read More</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="News Image" loading="lazy">
+            <h3 data-translate="news_title_3">News Title 3</h3>
+            <p data-translate="news_description_3">The latest information on the company's CSR program and its impact on the local community.</p>
+            <a href="#" class="card-btn" data-translate="read_more">Read More</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="News Image" loading="lazy">
+            <h3 data-translate="news_title_3">News Title 3</h3>
+            <p data-translate="news_description_3">The latest information on the company's CSR program and its impact on the local community.</p>
+            <a href="#" class="card-btn" data-translate="read_more">Read More</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="News Image" loading="lazy">
+            <h3 data-translate="news_title_3">News Title 3</h3>
+            <p data-translate="news_description_3">The latest information on the company's CSR program and its impact on the local community.</p>
+            <a href="#" class="card-btn" data-translate="read_more">Read More</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="News Image" loading="lazy">
+            <h3 data-translate="news_title_3">News Title 3</h3>
+            <p data-translate="news_description_3">The latest information on the company's CSR program and its impact on the local community.</p>
+            <a href="#" class="card-btn" data-translate="read_more">Read More</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="News Image" loading="lazy">
+            <h3 data-translate="news_title_3">News Title 3</h3>
+            <p data-translate="news_description_3">The latest information on the company's CSR program and its impact on the local community.</p>
+            <a href="#" class="card-btn" data-translate="read_more">Read More</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="News Image" loading="lazy">
+            <h3 data-translate="news_title_3">News Title 3</h3>
+            <p data-translate="news_description_3">The latest information on the company's CSR program and its impact on the local community.</p>
+            <a href="#" class="card-btn" data-translate="read_more">Read More</a>
+        </div>
+    </section>
+
+<!-- GALLERY SECTION-->
+    <section class="portfolio">
+        <h2 class="portfolio-title" data-translate="portfolio">MY PORTFOLIO</h2>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all" data-translate="all">All</button>
+            <button class="filter-btn" data-filter="design" data-translate="design">Design</button>
+            <button class="filter-btn" data-filter="development" data-translate="development">Development</button>
+            <button class="filter-btn" data-filter="marketing" data-translate="marketing">Marketing</button>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item" data-category="design">
+                <img src="resource/img/7.jpg" alt="Design 1" loading="lazy">
+            </div>
+            <div class="gallery-item" data-category="development">
+                <img src="resource/img/hero.jpg" alt="Development 1" loading="lazy">
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </section>
+
+<!-- Contact Section -->
+    <section class="contact-section">
+        <h2 class="section-title" data-translate="contact_us">Contact Us</h2>
+        <p class="section-description" data-translate="contact_description">Please contact us for any questions or further information. We are happy to assist you.</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3 data-translate="address">Address</h3>
+                <p data-translate="contact_address">YOUR COMPANY ADDRESS</p>
+            </div>
+            <div class="contact-item">
+                <h3 data-translate="phone">Phone</h3>
+                <p data-translate="contact_phone">+62 123 456 789</p>
+            </div>
+            <div class="contact-item">
+                <h3 data-translate="email">Email</h3>
+                <p data-translate="contact_email">Your Email</p>
+            </div>
+        </div>
+
+        <form class="contact-form">
+            <h3 data-translate="send_message">Send Us a Message</h3>
+            <label for="name" data-translate="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email" data-translate="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message" data-translate="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit" class="form-btn" data-translate="send_message">Send Message</button>
+        </form>
+    </section>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="resource/img/logo.png" alt="Company Logo">
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="about_us">About Us</h4>
+                <p data-translate="about_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="quick_links">Quick Links</h4>
+                <ul>
+                    <li><a href="#" data-translate="home">Home</a></li>
+                    <li><a href="#" data-translate="facilities">Facilities</a></li>
+                    <li><a href="#" data-translate="about">About</a></li>
+                    <li><a href="#" data-translate="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="contact_us">Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a href="tel:+123456789">+123 456 789</a></li>
+                    <li data-translate="address">123 Street, City, Country</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="copyright">&copy; 2024 Suryadi (Project). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<!-- Script -->
+<script src="slider.js"></script>
+<script src="translations.js"></script>
+
+</body>
+</html>
