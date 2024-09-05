@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">
+            <img src="resource/img/logo.png" alt="Logo" class="logo">
+        </a>
+
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link" data-translate="home">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-translate="facilities">Facilities</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link" data-translate="about">About</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="product">Product</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-translate="automotive">Automotive</a>
+                        <a href="#" class="dropdown-item" data-translate="non_automotive">Non-Automotive</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="language">Language</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-lang="id">
+                            <img src="resource/img/id.jpg" alt="Indonesia Flag" class="flag-icon"> Indonesian
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="jp">
+                            <img src="resource/img/jp.png" alt="Japan Flag" class="flag-icon"> Japanese
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="uk">
+                            <img src="resource/img/uk.png" alt="UK Flag" class="flag-icon"> English
+                        </a>              
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link" data-translate="contact">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <span onclick="toggleNavbar()" class="navbar-toggle" id="navbarToggle">&#9776;</span>
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <span onclick="closeSidebar()" class="close-btn">&times;</span>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="home">Home</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="facilities">Facilities</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="about">About</a></li>
+                <li class="sidebar-item dropdown">
+                    <a href="#" class="sidebar-link dropdown-toggle" data-toggle="dropdown" data-translate="product">Product</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-translate="automotive">Automotive</a>
+                        <a href="#" class="dropdown-item" data-translate="non_automotive">Non-Automotive</a>
+                    </div>
+                </li>
+                <li class="sidebar-item dropdown">
+                    <a href="#" class="sidebar-link dropdown-toggle" data-toggle="dropdown" data-translate="language">Language</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-lang="id">
+                            <img src="resource/img/id.jpg" alt="Indonesia Flag" class="flag-icon"> Indonesian
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="jp">
+                            <img src="resource/img/jp.png" alt="Japan Flag" class="flag-icon"> Japanese
+                        </a>
+                        <a href="#" class="dropdown-item" data-lang="uk">
+                            <img src="resource/img/uk.png" alt="UK Flag" class="flag-icon"> English
+                        </a>              
+                    </div>
+                </li>
+                <li class="sidebar-item"><a href="#" class="sidebar-link" data-translate="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+ <!-- Content -->
+ <section class="company-introduction">
+    <div class="container">
+        <h2 data-translate="company_introduction">Company Introduction</h2>
+        <p data-translate="company_description">
+            Kyoraku Blowmolding Indonesia didirikan di Indonesia pada bulan April 1997 sebagai produsen plastik. 
+            Perusahaan induk kami, KYORAKU CO., LTD. awal didirikan di Jepang sejak September 1917, yang telah 
+            menjadi salah satu pemasok terkemuka produk plastik di Jepang Domestik dan Internasional.
+        </p>
+        <p data-translate="company_description">
+            Sejak mengembangkan bisnis kami di Indonesia, kami terus mengembangkan bisnis kami dengan mendapatkan 
+            reputasi yang sangat baik sebagai pelopor produk plastik. Dalam beberapa tahun terakhir, kami telah 
+            secara aktif terlibat dalam meningkatkan kehadiran domestik dan internasional kami untuk lebih 
+            memperluas dan memperkuat bisnis kami.
+        </p>
+        <p data-translate="company_description">
+            Produk kami, yang diproduksi dengan menggunakan teknologi dan fasilitas terbaru, mendapatkan 
+            kepercayaan pengguna yang tinggi dan sebagai hasilnya, kami telah mendapatkan pengakuan sebagai 
+            salah satu pemasok suku cadang plastik terkemuka di Indonesia.
+        </p>
+        <h3>Sejarah</h3>
+        <ul>
+            <li>1997 : Mendirikan PT. Kyoraku Blowmolding Indonesia, di Karawang Jawa Barat</li>
+            <li>2003 : Mendirikan PT. Kyoraku Blowmolding Indonesia Plant 2, di Karawang Jawa Barat</li>
+        </ul>
+    </div>
+</section>
+
+<section class="business-prospects">
+    <div class="container">
+        <h2 data-translate="business_prospects">Business Prospects</h2>
+        <p data-translate="business_prospects_description">
+            “Challenge for The Better” adalah prinsip perusahaan, yang telah kami bangun bisnis kami tahun ini.
+        </p>
+        <p data-translate="business_prospects_description">
+            Berdasarkan pengalaman manufaktur kami lebih dari 25 tahun, dan juga lebih dari 100 tahun pengalaman KYORAKU. Co., Ltd sebagai pemimpin, Kami menyediakan berbagai pilihan produk blow moulding yang sangat andal termasuk suku cadang otomotif (air ducts, spoilers, washer tank, reserve tank, dll.), dan suku cadang non-otomotif (pianica case, medical bed boards, engine tray, dll.). Di masa depan, kami akan terus melakukan upaya terbaik kami untuk lebih mengembangkan bisnis kami dan berkontribusi kepada masyarakat.
+        </p>
+    </div>
+</section>
+
+<!-- Facility CARD -->
+<section class="facility-section">
+    <h2 class="section-title" data-translate="vision_mission_policy_title">Vision, Mission, and Policies</h2>
+    <p class="section-description" data-translate="vision_mission_policy_description">Discover our vision, mission, and policies that drive our company.</p>
+
+    <!-- Vision Card -->
+    <div class="card">
+        <img src="resource/img/vision.jpeg" alt="Vision Image" loading="lazy">
+        <h3 data-translate="company_vision">Company Vision</h3>
+        <p data-translate="vision_description">Our vision is to be a global leader in providing innovative solutions and outstanding services to our clients.</p>
+        <button class="card-btn" data-translate="explore_more">Explore More</button>
+    </div>
+
+    <!-- Mission Card -->
+    <div class="card">
+        <img src="resource/img/mission.jpeg" alt="Mission Image" loading="lazy">
+        <h3 data-translate="company_mission">Company Mission</h3>
+        <p data-translate="mission_description">Our mission is to deliver high-quality products and services with integrity, innovation, and customer satisfaction.</p>
+        <button class="card-btn" data-translate="explore_more">Explore More</button>
+    </div>
+
+    <!-- Policies Card -->
+    <div class="card">
+        <img src="resource/img/policies.jpeg" alt="Policies Image" loading="lazy">
+        <h3 data-translate="company_policies">Company Policies</h3>
+        <p data-translate="policies_description">Our policies ensure compliance with industry standards and promote ethical practices within our organization.</p>
+        <button class="card-btn" data-translate="explore_more">Explore More</button>
+    </div>
+</section>
+
+
+<!-- Facility CARD -->
+<section class="facility-section">
+    <h2 class="section-title" data-translate="certificates_title">Certificates</h2>
+    <p class="section-description" data-translate="certificates_description">Explore the certifications that affirm our commitment to quality and excellence.</p>
+
+    <!-- Certificate Card 1 -->
+    <div class="card">
+        <img src="resource/img/certificate1.jpeg" alt="Certificate Image" loading="lazy">
+        <h3 data-translate="certification_1">ISO 9001 Certification</h3>
+        <p data-translate="certification_1_description">Our ISO 9001 certification demonstrates our commitment to maintaining quality management standards.</p>
+        <button class="card-btn" data-translate="explore_more">Explore More</button>
+    </div>
+
+    <!-- Certificate Card 2 -->
+    <div class="card">
+        <img src="resource/img/certificate2.jpeg" alt="Certificate Image" loading="lazy">
+        <h3 data-translate="certification_2">ISO 14001 Certification</h3>
+        <p data-translate="certification_2_description">Our ISO 14001 certification reflects our dedication to environmental management and sustainability.</p>
+        <button class="card-btn" data-translate="explore_more">Explore More</button>
+    </div>
+
+    <!-- Certificate Card 3 -->
+    <div class="card">
+        <img src="resource/img/certificate3.jpeg" alt="Certificate Image" loading="lazy">
+        <h3 data-translate="certification_3">OHSAS 18001 Certification</h3>
+        <p data-translate="certification_3_description">Our OHSAS 18001 certification highlights our focus on occupational health and safety management.</p>
+        <button class="card-btn" data-translate="explore_more">Explore More</button>
+    </div>
+    <div class="card">
+        <img src="resource/img/certificate3.jpeg" alt="Certificate Image" loading="lazy">
+        <h3 data-translate="certification_3">OHSAS 18001 Certification</h3>
+        <p data-translate="certification_3_description">Our OHSAS 18001 certification highlights our focus on occupational health and safety management.</p>
+        <button class="card-btn" data-translate="explore_more">Explore More</button>
+    </div>
+    <div class="card">
+        <img src="resource/img/certificate3.jpeg" alt="Certificate Image" loading="lazy">
+        <h3 data-translate="certification_3">OHSAS 18001 Certification</h3>
+        <p data-translate="certification_3_description">Our OHSAS 18001 certification highlights our focus on occupational health and safety management.</p>
+        <button class="card-btn" data-translate="explore_more">Explore More</button>
+    </div>
+
+</section>
+
+<!-- Management Section -->
+<section class="management-section">
+    <h2 class="section-title" data-translate="management_title">Our Management Team</h2>
+    <p class="section-description" data-translate="management_description">Meet the leaders who drive our success and guide our mission.</p>
+
+    <!-- Management Card 1 -->
+    <div class="card">
+        <img src="resource/img/manager3.jpeg" alt="Manager Image" loading="lazy">
+        <h3 data-translate="manager_3_name">Emily Johnson</h3>
+        <p data-translate="manager_3_position">COO</p>
+        <p data-translate="manager_3_bio">Emily manages our day-to-day operations with a focus on efficiency and excellence, ensuring smooth and effective processes.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+
+    <!-- Management Card 2 -->
+    <div class="card">
+        <img src="resource/img/manager2.jpeg" alt="Manager Image" loading="lazy">
+        <h3 data-translate="manager_2_name">Jane Smith</h3>
+        <p data-translate="manager_2_position">CFO</p>
+        <p data-translate="manager_2_bio">Jane oversees our financial operations with precision and expertise, ensuring our fiscal health and strategic growth.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+
+    <!-- Management Card 3 -->
+    <div class="card">
+        <img src="resource/img/manager3.jpeg" alt="Manager Image" loading="lazy">
+        <h3 data-translate="manager_3_name">Emily Johnson</h3>
+        <p data-translate="manager_3_position">COO</p>
+        <p data-translate="manager_3_bio">Emily manages our day-to-day operations with a focus on efficiency and excellence, ensuring smooth and effective processes.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img src="resource/img/manager3.jpeg" alt="Manager Image" loading="lazy">
+        <h3 data-translate="manager_3_name">Emily Johnson</h3>
+        <p data-translate="manager_3_position">COO</p>
+        <p data-translate="manager_3_bio">Emily manages our day-to-day operations with a focus on efficiency and excellence, ensuring smooth and effective processes.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img src="resource/img/manager3.jpeg" alt="Manager Image" loading="lazy">
+        <h3 data-translate="manager_3_name">Emily Johnson</h3>
+        <p data-translate="manager_3_position">COO</p>
+        <p data-translate="manager_3_bio">Emily manages our day-to-day operations with a focus on efficiency and excellence, ensuring smooth and effective processes.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img src="resource/img/manager3.jpeg" alt="Manager Image" loading="lazy">
+        <h3 data-translate="manager_3_name">Emily Johnson</h3>
+        <p data-translate="manager_3_position">COO</p>
+        <p data-translate="manager_3_bio">Emily manages our day-to-day operations with a focus on efficiency and excellence, ensuring smooth and effective processes.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+</section>
+
+<!-- Customer Card Section -->
+<section class="customer-section">
+    <h2 class="section-title" data-translate="customers_title">Our Customers</h2>
+    <p class="section-description" data-translate="customers_description">We are proud to work with leading brands and businesses.</p>
+
+    <div class="card">
+        <img class="logo" src="path/to/logo1.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_1">Customer Name 1</h3>
+        <p data-translate="customer_description_1">Description of the first customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img class="logo" src="path/to/logo2.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_2">Customer Name 2</h3>
+        <p data-translate="customer_description_2">Description of the second customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img class="logo" src="path/to/logo3.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_3">Customer Name 3</h3>
+        <p data-translate="customer_description_3">Description of the third customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img class="logo" src="path/to/logo3.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_3">Customer Name 3</h3>
+        <p data-translate="customer_description_3">Description of the third customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img class="logo" src="path/to/logo3.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_3">Customer Name 3</h3>
+        <p data-translate="customer_description_3">Description of the third customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img class="logo" src="path/to/logo3.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_3">Customer Name 3</h3>
+        <p data-translate="customer_description_3">Description of the third customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img class="logo" src="path/to/logo3.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_3">Customer Name 3</h3>
+        <p data-translate="customer_description_3">Description of the third customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img class="logo" src="path/to/logo3.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_3">Customer Name 3</h3>
+        <p data-translate="customer_description_3">Description of the third customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img class="logo" src="path/to/logo3.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_3">Customer Name 3</h3>
+        <p data-translate="customer_description_3">Description of the third customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img class="logo" src="path/to/logo3.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_3">Customer Name 3</h3>
+        <p data-translate="customer_description_3">Description of the third customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+    <div class="card">
+        <img class="logo" src="path/to/logo3.png" alt="Customer Logo" loading="lazy">
+        <h3 data-translate="customer_name_3">Customer Name 3</h3>
+        <p data-translate="customer_description_3">Description of the third customer or company. Highlight key features or collaborations.</p>
+        <button class="card-btn" data-translate="learn_more">Learn More</button>
+    </div>
+</section>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="resource/img/logo.png" alt="Company Logo">
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="about_us">About Us</h4>
+                <p data-translate="about_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="quick_links">Quick Links</h4>
+                <ul>
+                    <li><a href="#" data-translate="home">Home</a></li>
+                    <li><a href="#" data-translate="facilities">Facilities</a></li>
+                    <li><a href="#" data-translate="about">About</a></li>
+                    <li><a href="#" data-translate="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-translate="contact_us">Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a href="tel:+123456789">+123 456 789</a></li>
+                    <li data-translate="address">123 Street, City, Country</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="copyright">&copy; 2024 Suryadi (Project). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<!-- Script -->
+<script src="translations.js"></script>
+<script src="sidebar.js"></script>
+<script src="data-filter.js"></script>
+
+</body>
+</html>
